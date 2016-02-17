@@ -3,20 +3,82 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-ul.container{
+ul.cats{
   width: 100%;
   /*max-width: 1300px;*/
 }
-
 li {
   margin: -1px;
   display: inline;
-  width: 16.6%;
+  height: inherit;
   margin-bottom: -1px;
 }
 
-img {
-  width: 16.6%;
-  margin-bottom: -1px;
+p {
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-top: 2em;
+}
 
+.text{
+  display: none;
+  padding: 0px;
+  background-color: rgba(71,163,218,0.2);
+  position: absolute;
+  width: 13%;
+  height: 17em;
+  margin-top: 1.2em;
+  margin-left: -15%;
+}
+
+img:hover + span{
+  display: inline;
+}
+
+@media screen /*6x5*/
+  and (min-device-width: 1191px)
+  and (max-device-width: 1600px) {
+    img {
+      width: 16.6%;
+      margin-bottom: -1px;
+    }
+}
+
+@media screen /*5x6*/
+  and (min-device-width: 945px)
+  and (max-device-width: 1190px) {
+    img {
+      width: 20%;
+      margin-bottom: -1px;
+    }
+}
+
+@media screen /*4x8*/
+  and (min-device-width: 660px)
+  and (max-device-width: 944px) {
+    img {
+      width: 25%;
+      margin-bottom: -1px;
+    }
+}
+
+@media screen /*3x10*/
+  and (min-device-width: 400px)
+  and (max-device-width: 659px) {
+    img {
+      width: 33%;
+      margin-bottom: -1px;
+    }
+}
+
+@media screen /*2x15*/
+  and (min-device-width: 300px)
+  and (max-device-width: 399px) {
+    img {
+      width: 50%;
+      margin-bottom: -1px;
+    }
 }
