@@ -1,1 +1,22 @@
+html {
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+}
 
+ul.container{
+  width: 100%;
+  /*max-width: 1300px;*/
+}
+
+li {
+  margin: -1px;
+  display: inline;
+  width: 16.6%;
+  margin-bottom: -1px;
+}
+
+img {
+  width: 16.6%;
+  margin-bottom: -1px;
+
+}
