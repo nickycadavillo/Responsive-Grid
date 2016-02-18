@@ -4,9 +4,10 @@ html {
 }
 
 ul.cats{
-  width: 100%;
+  /*width: 100%;*/
   /*max-width: 1300px;*/
 }
+
 li {
   margin: -1px;
   display: inline;
@@ -14,6 +15,7 @@ li {
   margin-bottom: -1px;
 }
 
+/*
 p {
   color: white;
   font-size: 2em;
@@ -29,10 +31,11 @@ p {
   background-color: rgba(71,163,218,0.2);
   position: absolute;
   width: 13%;
-  height: 17em;
-  margin-top: 1.2em;
+  height: 16em;
+  margin-top: 1.5em;
   margin-left: -15%;
-}
+  overflow:hidden;
+}*/
 
 img:hover + span{
   display: inline;
@@ -41,27 +44,102 @@ img:hover + span{
 @media screen /*6x5*/
   and (min-device-width: 1191px)
   and (max-device-width: 1600px) {
+    ul {
+      width: 100%;
+    }
+
     img {
       width: 16.6%;
       margin-bottom: -1px;
+    }
+
+    p {
+      color: white;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      padding-top: 2em;
+    }
+
+    .text{
+      display: none;
+      padding: 0px;
+      background-color: rgba(71,163,218,0.2);
+      position: absolute;
+      width: 13%;
+      height: 18em;
+      margin-top: 1.5em;
+      margin-left: -15%;
+      overflow:hidden;
     }
 }
 
 @media screen /*5x6*/
   and (min-device-width: 945px)
   and (max-device-width: 1190px) {
+    ul {
+      width: 100%;
+    }
+
     img {
       width: 20%;
       margin-bottom: -1px;
+    }
+
+    p {
+      color: white;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      padding-top: 2em;
+    }
+
+    .text{
+      display: none;
+      padding: 0px;
+      background-color: rgba(71,163,218,0.2);
+      position: absolute;
+      width: 12.5%;
+      height: 14em;
+      margin-top: 1em;
+      margin-left: -16%;
+      overflow:hidden;
     }
 }
 
 @media screen /*4x8*/
   and (min-device-width: 660px)
   and (max-device-width: 944px) {
+    ul {
+      width: 100%;
+    }
+
     img {
-      width: 25%;
+      width: 24%;
       margin-bottom: -1px;
+    }
+
+    p {
+      color: white;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      padding-top: 2em;
+    }
+
+    .text{
+      display: none;
+      padding: 0px;
+      background-color: rgba(71,163,218,0.2);
+      position: absolute;
+      width: 18%;
+      height: 18em;
+      margin-top: 1em;
+      margin-left: -21%;
+      overflow:hidden;
     }
 }
 
@@ -69,8 +147,30 @@ img:hover + span{
   and (min-device-width: 400px)
   and (max-device-width: 659px) {
     img {
-      width: 33%;
+      max-width: 33%;
       margin-bottom: -1px;
+      overflow: hidden;
+    }
+
+    p {
+      color: white;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      padding-top: 2em;
+    }
+
+    .text{
+      display: none;
+      padding: 0px;
+      background-color: rgba(71,163,218,0.2);
+      position: absolute;
+      width: 27%;
+      height: 20em;
+      margin-top: 1em;
+      margin-left: -30%;
+      overflow:hidden;
     }
 }
 
@@ -80,5 +180,26 @@ img:hover + span{
     img {
       width: 50%;
       margin-bottom: -1px;
+    }
+
+    p {
+      color: white;
+      font-size: 2em;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      padding-top: 2em;
+    }
+
+    .text{
+      display: none;
+      padding: 0px;
+      background-color: rgba(71,163,218,0.2);
+      position: absolute;
+      width: 35%;
+      height: 40%;
+      margin-top: 3em;
+      margin-left:-42%;
+      overflow:hidden;
     }
 }
